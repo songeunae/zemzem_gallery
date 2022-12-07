@@ -1,0 +1,320 @@
+/*전체설정*/
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Pretendard';
+    min-width: 1450px;
+}
+
+/* bg */
+
+.bg_1 {
+    /* #content1 -> position: relative; */
+    position: absolute;
+    top: -170px;
+    left: 0;
+    width: 100%;
+}
+
+.bg_2 {
+    position: absolute;
+    width: 100%;
+    bottom: -75px;
+    left: 0;
+}
+
+/* title */
+.title {
+    text-align: center;
+    color: #554276;
+    padding: 61px 0 30px;
+    font-size: 40px;
+}
+
+.tt_s {
+    font-size: 24px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 50;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -45%);
+    z-index: 50;
+}
+
+/* 메뉴 시작 */
+.gnb {
+    float: left;
+}
+
+.gnb>li {
+    float: left;
+    padding: 43.5px 45px;
+    position: relative;
+}
+
+.gnb>li>a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gnb>li>a:hover {
+    /* 글씨 그라데이션 넣기 */
+    background: linear-gradient(to right, #554276, #f6b0b2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gnb_mg {
+    margin-left: 250px;
+}
+
+.sub_bg1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+    display: none;
+}
+
+/* 메뉴 끝 */
+/* 아이콘 시작 */
+.icon {
+    float: right;
+}
+
+.icon li {
+    float: left;
+    padding: 38px 15px;
+}
+
+/* 아이콘 끝 */
+
+/* sub_menu */
+.sub_menu {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    z-index: 30;
+    color: #fff;
+    font-size: 18px;
+    display: none;
+}
+
+.sub_menu ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub_menu ul li:hover {
+    font-weight: bold;
+}
+
+.sub_menu ul li a {
+    display: inline-block;
+}
+
+
+/* present */
+#present {
+    width: 100%;
+    height: 950px;
+    background-color: #fef5df;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 110px;
+    position: relative;
+}
+
+.present_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.poster1,
+.poster2,
+.poster3,
+.poster4,
+.poster5 {
+    width: 360px;
+    height: 530px;
+}
+
+.p_tt {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.p_td {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+/* last */
+#last {
+    width: 100%;
+    height: 890px;
+    background-color: #b2aed7;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.last_inner {
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.s_end1 {
+    position: absolute;
+    top: 110px;
+    left: 790px;
+    z-index: 2;
+    animation: upanddown2 1s linear infinite alternate;
+}
+
+.s_end2 {
+    position: absolute;
+    top: 110px;
+    right: 450px;
+    z-index: 2;
+    animation: upanddown2 1s linear infinite alternate;
+}
+
+/* etiquette */
+#etiquette {
+    position: relative;
+    width: 100%;
+    height: 1850px;
+    background-color: #ecdeed;
+}
+
+.etiquette_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.etk_box {
+    display: flex;
+    justify-content: space-between;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.etk_box img {
+    height: 100%;
+}
+
+.etk_2,
+.etk_4,
+.etk_6 {
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.etk_box_t {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 80px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #554276;
+    color: #fff;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.copyright {
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.f_logo {
+    float: right;
+    padding-top: 40px;
+}
+
+/* 애니메이션 효과 */
+@keyframes upanddown2 {
+    from {
+        transform: translateY(-5px);
+    }
+
+    to {
+        transform: translateY(5px);
+    }
+}

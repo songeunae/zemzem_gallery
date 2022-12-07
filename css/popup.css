@@ -1,0 +1,133 @@
+/*전체설정*/
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Pretendard';
+    min-width: 1450px;
+}
+
+/* 팝업창 css */
+.popup1,
+.popup2,
+.popup3,
+.popup4,
+.popup5 {
+    background-color: rgba(85, 66, 118, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /* 팝업창 모양이 완벽히 끝나고 나면 display:none속성으로 처음에 안보이게까지만 css로 설정한다. */
+    z-index: 60;
+}
+
+.popup_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 650px;
+    background: #fff;
+    z-index: 62;
+    border-radius: 100px;
+}
+
+.popup4>.popup_box>.p_box_inner>.p_box_text {
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+.p_box_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.p_box_inner h3 {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.p_box_inner p {
+    line-height: 22px;
+    padding-top: 15px;
+}
+
+.p_zemdol {
+    position: absolute;
+    top: 490px;
+    right: 285px;
+    z-index: 63;
+    animation: rotation2 1s linear infinite alternate;
+}
+
+.close {
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    bottom: 40px;
+    right: 40%;
+    transform: translateX(-40%);
+    border: 2px #333 solid;
+    border-radius: 30px;
+    width: 100px;
+    height: 45px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+.close:hover {
+    background-color: #554276;
+    color: #fff;
+    border: 2px #554276 solid;
+}
+
+@keyframes rotation2 {
+
+    /* 좌우 돌아가는 각도 애니메이션 */
+    from {
+        transform: rotate(0);
+        transform-origin: center bottom;
+    }
+
+    to {
+        transform: rotate(5deg);
+        transform-origin: center bottom;
+    }
+}

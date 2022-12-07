@@ -1,0 +1,592 @@
+/*전체설정*/
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Pretendard';
+    min-width: 1450px;
+}
+
+/* bg */
+
+.bg_1 {
+    /* #content1 -> position: relative; */
+    position: absolute;
+    top: -170px;
+    left: 0;
+    width: 100%;
+}
+
+.bg_2 {
+    position: absolute;
+    width: 100%;
+    bottom: -75px;
+    left: 0;
+}
+
+/* title */
+.title {
+    text-align: center;
+    color: #554276;
+    padding: 61px 0 30px;
+    font-size: 40px;
+}
+
+.tt_s {
+    font-size: 24px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+/* 캐릭터 */
+.zemgul {
+    /* #content1 -> position: relative; */
+    position: absolute;
+    top: 0;
+    right: 0px;
+    overflow: hidden;
+}
+
+.zem3_D {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+.zem3_1 {
+    position: absolute;
+    left: 70px;
+    top: -70px;
+    animation: upanddown 1s linear infinite alternate;
+}
+
+.zem3_2 {
+    position: absolute;
+    left: 157px;
+    top: -160px;
+    animation: downandup 1s linear infinite alternate;
+}
+
+.zemdol {
+    position: absolute;
+    right: 100px;
+    top: -180px;
+    animation: rotation 1s linear infinite alternate;
+}
+
+.gomulzem {
+    position: absolute;
+    top: -100px;
+    right: 560px;
+    animation: left_right 1s linear infinite alternate;
+}
+
+.zemsun {
+    position: absolute;
+    top: -245px;
+    left: 100px;
+    animation: rotation2 1s linear infinite alternate;
+}
+
+.zemsun_d {
+    position: absolute;
+    top: 85px;
+    left: 140px
+}
+
+.zem3_bt {
+    padding: 50px 0;
+}
+
+.yongzem {
+    position: absolute;
+    top: -200px;
+    right: 40px;
+    animation: upanddown 1s linear infinite alternate;
+}
+
+.yongzem_d {
+    position: absolute;
+    top: 5px;
+    right: 70px;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 50;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -45%);
+    z-index: 50;
+}
+
+/* 메뉴 시작 */
+.gnb {
+    float: left;
+}
+
+.gnb>li {
+    float: left;
+    padding: 43.5px 45px;
+    position: relative;
+}
+
+.gnb>li>a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gnb>li>a:hover {
+    /* 글씨 그라데이션 넣기 */
+    background: linear-gradient(to right, #554276, #f6b0b2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gnb_mg {
+    margin-left: 250px;
+}
+
+.sub_bg1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+    display: none;
+}
+
+/* 메뉴 끝 */
+/* 아이콘 시작 */
+.icon {
+    float: right;
+}
+
+.icon li {
+    float: left;
+    padding: 38px 15px;
+}
+
+/* 아이콘 끝 */
+
+/* sub_menu */
+.sub_menu {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    z-index: 30;
+    color: #fff;
+    font-size: 18px;
+    display: none;
+}
+
+.sub_menu ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub_menu ul li:hover {
+    font-weight: bold;
+}
+
+.sub_menu ul li a {
+    display: inline-block;
+}
+
+
+/* mainbanner */
+#mainbanner {
+    width: 100%;
+    height: 950px;
+    background-color: #fff;
+    background: #fff url(../images/mainbanner_bg.png) no-repeat center center;
+}
+
+.main_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main_p1,
+.main_p2,
+.main_p3,
+.main_p4 {
+    position: absolute;
+}
+
+.main_p1 {
+    top: 510px;
+    left: 0;
+}
+
+.main_p2 {
+    top: 170px;
+    left: 460px;
+}
+
+.main_p3 {
+    top: 550px;
+    right: 500px;
+}
+
+.main_p4 {
+    top: 280px;
+    right: -40px;
+}
+
+/* content1 */
+#content1 {
+    width: 100%;
+    height: 950px;
+    background-color: #fef5df;
+    text-align: center;
+    position: relative;
+}
+
+.con1_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.con1 {
+    margin-top: 20px;
+    color: #333;
+    width: 1200px;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    width: 360px;
+    height: 530px;
+}
+
+.swiper-slide h2 {
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+.swiper-slide p {
+    padding: 6px 0 8px;
+    font-size: 16px;
+}
+
+.con1 .swiper-pagination span {
+    background-color: #554276;
+}
+
+/*페이지네이션의 동그라미 색상은 페이지네이션 클래스 안의 span 태그에 들어가 있으므로, 반드시 그 안의 스팬태그에게 스타일을 준다.*/
+
+
+/* content2 */
+#content2 {
+    width: 100%;
+    height: 950px;
+    background-color: #ecdeed;
+    position: relative;
+}
+
+.con2_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.drawing {
+    position: relative;
+    width: 1320px;
+    margin: 0 auto;
+    height: 490px;
+    font-family: 'BMJUA';
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.drawing_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 710px;
+    height: 450px;
+    box-sizing: border-box;
+}
+
+.drawing_1 a p {
+    padding-top: 210px;
+    padding-left: 80px;
+}
+
+.drawing_2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 710px;
+    height: 450px;
+    box-sizing: border-box;
+}
+
+
+/* content3 */
+#content3 {
+    width: 100%;
+    height: 1000px;
+    background-color: #f6b0b2;
+    position: relative;
+}
+
+.con3_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.store {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product1 {
+    width: 450px;
+    height: 830px;
+    border-radius: 225px;
+    background: url(../images/product_1.jpg) repeat-x left top;
+    background-size: cover;
+    margin-top: 50px;
+    animation: product1 20s linear infinite alternate;
+}
+
+.product3 {
+    padding-top: 70px;
+}
+
+.pd_img:hover {
+    transform: translateY(-10px);
+    transition: all 0.5s;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.p_tt {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 30px 0 5px;
+}
+
+.won {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.more {
+    display: block;
+    width: 70px;
+    height: 28px;
+    color: #554276;
+    border: #554276 solid 2px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.more:hover {
+    display: block;
+    background-color: #554276;
+    color: #fff;
+    border: #554276 solid 2px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+/* content4 */
+#content4 {
+    width: 100%;
+    height: 950px;
+    background-color: #b2aed7;
+    position: relative;
+}
+
+.con4_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.event {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event_img:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.5s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* content5 */
+#content5 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.con5_inner {
+    margin: 0 auto;
+}
+
+.insta {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 100px 0;
+}
+
+.insta li {
+    width: 18%;
+}
+
+.insta li a img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #554276;
+    color: #fff;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.copyright {
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.f_logo {
+    float: right;
+    padding-top: 40px;
+}
+
+/* 애니메이션 */
+@keyframes upanddown {
+    from {
+        transform: translateY(-15px);
+    }
+
+    to {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes downandup {
+    from {
+        transform: translateY(15px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes left_right {
+
+    /* 꼬물젬 애니메이션 */
+    from {
+        transform: translate(15px, 15px);
+    }
+
+    to {
+        transform: translateX(-15px, -15px);
+    }
+}
+
+@keyframes rotation {
+
+    /* 좌우 돌아가는 각도 애니메이션 */
+    from {
+        transform: rotate(0);
+        transform-origin: center bottom;
+    }
+
+    to {
+        transform: rotate(15deg);
+        transform-origin: center bottom;
+    }
+}
+
+@keyframes rotation2 {
+
+    /* 좌우 돌아가는 각도 애니메이션 */
+    from {
+        transform: rotate(0);
+        transform-origin: center bottom;
+    }
+
+    to {
+        transform: rotate(5deg);
+        transform-origin: center bottom;
+    }
+}
+
+@keyframes product1 {
+
+    /* 제품1배경이미지 옆으로 애니메이션 */
+    50% {
+        background-position: right;
+    }
+}

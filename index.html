@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>젬젬갤러리</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!--제이쿼리 cdn-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script src="./js/javascript.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- webfont -->
+    <link rel="stylesheet" href="./font/webfont.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- 배경이미지 -->
+        <div class="header_inner clearfix">
+            <!-- width:1320px, margin:auto -->
+            <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="상단로고"></a></h1>
+            <!-- logo -->
+            <ul class="gnb">
+                <!-- float:left -->
+                <li><a href="./sub1.html">브랜드소개</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">BI</a></li>
+                        </ul>
+                    </div>
+                    <!-- sub_menu -->
+                </li>
+                <li><a href="./sub2.html">전시안내</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">현재전시</a></li>
+                            <li><a href="#">지난전시</a></li>
+                            <li><a href="#">전시장 에티켓</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./sub3.html">드로잉체험</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">체험안내</a></li>
+                            <li><a href="#">체험예약</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb_mg"><a href="./sub4.html">젬젬스토어</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">굿즈</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./sub5.html">커뮤니티</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">현재이벤트</a></li>
+                            <li><a href="#">지난이벤트</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- gnb -->
+            <ul class="icon">
+                <!-- float:right -->
+                <li><a href="https://www.youtube.com/"><img src="./images/icon1.png" alt="유튜브" class="i_youtube"></a>
+                </li>
+                <li><a href="https://www.instagram.com/ae_zzz_/"><img src="./images/icon2.png" alt="인스타그램"
+                            class="i_insta"></a></li>
+                <li><a href="https://www.kakaocorp.com/page/"><img src="./images/icon3.png" alt="카카오톡"
+                            class="i_kakao"></a></li>
+            </ul>
+            <!-- icon -->
+        </div>
+        <!-- header_inner -->
+        <img src="./images/submenu_bg.png" alt="서브배경" class="sub_bg1">
+    </header>
+
+
+    <div id="mainbanner">
+        <!-- width:100% -->
+        <ul class="main_inner">
+            <li class="main_p1"><img src="./images/mainbanner_1.png" alt="알맞은것들" class="main_p1_img"></li>
+            <li class="main_p2"><img src="./images/mainbanner_2.png" alt="우주귀지" class="main_p2_img"></li>
+            <li class="main_p3"><a href="#"><img src="./images/mainbanner_3.png" alt="젬순이" class="main_p3_img"></a></li>
+            <li class="main_p4"><img src="./images/mainbanner_4.png" alt="삐리릭" class="main_p4_img"></li>
+        </ul>
+    </div>
+    <!-- mainbanner -->
+
+    <div id="content1">
+        <!-- 배경색 : #fef5df -->
+        <img src="./images/bg_p1.png" alt="배경이미지" class="bg_1">
+        <div class="con1_inner">
+            <!-- width:1320px, margin:auto -->
+            <img src="./images/zemgul.gif" alt="젬굴이영감" class="zemgul">
+            <h1 class="title">현재 전시</h1>
+            <p class="tt_s">어디에서도 볼 수 없었던 전시 지금 만나보아요!</p>
+            <!-- <svg class="hidden" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="bubble-start">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                            result="start_hover">
+                        </feColorMatrix>
+                        <feBlend in2="bubble-start" in="SourceGraphic" result="mix"></feBlend>
+                    </filter>
+                </defs>
+            </svg> -->
+            <a href="./sub2.html" class="btn-bubble">
+                이동하기
+                <span class="btn-bubble-inner">
+                    <span class="btn-bubble-itembox">
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                    </span>
+                </span>
+            </a>
+        </div>
+        <!-- con1_inner -->
+        <!-- Swiper -->
+        <div class="swiper con1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/poster1.png" />
+                    <h2>우주귀지</h2>
+                    <p>'빼르록'의 귀지행성 이야기</p>
+                    <a href="#none">자세히보기</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/poster2.png" />
+                    <h2>멸종된 산호들</h2>
+                    <p>EM세대의 기억과 상상을 통해 그려진 산호들</p>
+                    <a href="#none">자세히보기</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/poster3.png" />
+                    <h2>삐리릭</h2>
+                    <p>삐리릭의 얼굴_어젯밤 꿈속에 나는 나는 날개 달고</p>
+                    <a href="#none">자세히보기</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- con1 -->
+        <img src="./images/bg_p2.png" alt="배경이미지" class="bg_2">
+    </div>
+    <!-- content1 -->
+
+    <div id="content2">
+        <!-- 배경색 : #ecdeed -->
+        <img src="./images/zem3_D.png" alt="삼둥이그림자" class="zem3_D">
+        <img src="./images/zem3_1.png" alt="삼둥이그림자" class="zem3_1">
+        <img src="./images/zem3_2.png" alt="삼둥이그림자" class="zem3_2">
+        <!-- 삼둥이 포지션 캐릭터 -->
+        <div class="con2_inner">
+            <!-- width:1320px, margin:auto -->
+            <h1 class="title">드로잉 체험관</h1>
+            <p class="tt_s">남녀노소 연령제한 없이 모두 즐길 수 있는 체험부스!</p>
+            <a href="./sub3.html" class="btn-bubble">
+                이동하기
+                <span class="btn-bubble-inner">
+                    <span class="btn-bubble-itembox">
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                    </span>
+                </span>
+            </a>
+            <ul class="drawing">
+                <!-- position:relative -->
+                <li class="drawing_1"><a href="./sub3.html">
+                        <!-- 이미지호버, position:absolute,width:710px,height:450px -->
+                        <img src="./images/announcement.png" alt="체험안내" class="drawing_1_img">
+                    </a></li>
+                <li class="drawing_2"><a href="./sub3.html">
+                        <!-- 이미지호버, position:absolute,width:710px,height:450px -->
+                        <img src="./images/reservation.png" alt="체험예약" class="drawing_2_img">
+                    </a></li>
+            </ul>
+            <img src="./images/bg_p3.png" alt="배경이미지" class="bg_2">
+        </div>
+        <!-- con2_inner -->
+    </div>
+    <!-- content2 -->
+
+    <div id="content3">
+        <!-- 배경색 : #f6b0b2 -->
+        <img src="./images/zemdol.png" alt="젬돌이" class="zemdol">
+        <!-- 젬돌이 포지션 캐릭터 -->
+        <div class="con3_inner">
+            <!-- width:1320px, margin:auto -->
+            <h1 class="title">젬젬 스토어</h1>
+            <p class="tt_s">젬젬갤러리만의 시그니처 아이템 구경하러 GO!</p>
+            <a href="./sub4.html" class="btn-bubble">
+                이동하기
+                <span class="btn-bubble-inner">
+                    <span class="btn-bubble-itembox">
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                    </span>
+                </span>
+            </a>
+            <div class="store">
+                <!-- display: flex -->
+                <div class="product1">
+                    <!-- 배경이미지 -->
+                </div>
+                <!-- product1 -->
+                <div class="product2">
+                    <a href="./sub4.html"><img src="./images/product_2.jpg" alt="젬순이케이스" class="pd_img"></a>
+                    <p class="p_tt">젬순이 케이스</p>
+                    <p class="p_td">
+                        하드케이스<br>
+                        화가 젬순이의 하트그림
+                    </p>
+                    <h3 class="won">20,000원</h3>
+                    <a href="#none" class="more">더 보기</a>
+                </div>
+                <!-- product2 -->
+                <div class="product3">
+                    <a href="./sub4.html"><img src="./images/product_3.jpg" alt="젬굴이영감양말" class="pd_img"></a>
+                    <p class="p_tt">젬굴이영감 양말</p>
+                    <p class="p_td">면재질<br>
+                        젬굴이영감 캐릭터 양말</p>
+                    <h3 class="won">1,300원</h3>
+                    <a href="#none" class="more">더 보기</a>
+                </div>
+                <!-- product3 -->
+            </div>
+            <!-- store -->
+        </div>
+        <!-- con3_inner -->
+        <img src="./images/bg_p4.png" alt="배경이미지" class="bg_2">
+    </div>
+    <!-- content3 -->
+
+    <div id="content4">
+        <!-- 배경색 : #b2aed7 -->
+        <img src="./images/gomulzem.png" alt="꼬물젬" class="gomulzem">
+        <!-- 꼬물젬 포지션 캐릭터 -->
+        <div class="con4_inner">
+            <!-- width:1320px, margin:auto -->
+            <h1 class="title">EVENT</h1>
+            <p class="tt_s">젬젬갤러리만의 특별한 이벤트</p>
+            <a href="./sub5.html" class="btn-bubble">
+                이동하기
+                <span class="btn-bubble-inner">
+                    <span class="btn-bubble-itembox">
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                    </span>
+                </span>
+            </a>
+            <ul class="event">
+                <li><a href="#none"><img src="./images/event_1.jpg" alt="이벤트1" class="event_img"></a></li>
+                <li><a href="#none"><img src="./images/event_2.jpg" alt="이벤트2" class="event_img"></a></li>
+            </ul>
+            <!-- event -->
+        </div>
+        <!-- con4_inner -->
+    </div>
+    <!-- content4 -->
+
+    <div id="content5">
+        <img src="./images/zemsun.png" alt="젬순이" class="zemsun">
+        <img src="./images/zemsun_d.png" alt="젬순이그림자" class="zemsun_d">
+        <!-- 젬순이 포지션 캐릭터 -->
+        <div class="con5_inner">
+            <!-- width:1320px, margin:auto -->
+            <h1 class="title">INSTAGRAM</h1>
+            <ul class="insta">
+                <li><a href="https://www.instagram.com/p/CdVuidFpEGu/">
+                        <img src="./images/insta_1.png" alt="인스타그램1">
+                    </a></li>
+                <li><a href="https://www.instagram.com/p/CCeBDKhJATT/">
+                        <img src="./images/insta_2.png" alt="인스타그램2">
+                    </a></li>
+                <li><a href="https://www.instagram.com/p/CQyC2sZp3cm/">
+                        <img src="./images/insta_3.png" alt="인스타그램3">
+                    </a></li>
+                <li><a href="https://www.instagram.com/p/CjUVxEtJNkE/">
+                        <img src="./images/insta_4.png" alt="인스타그램4">
+                    </a></li>
+                <li><a href="https://www.instagram.com/p/CCs-79Qpp5B/">
+                        <img src="./images/insta_5.png" alt="인스타그램5">
+                    </a></li>
+            </ul>
+            <!-- insta -->
+        </div>
+        <!-- con5_inner -->
+        <img src="./images/zem3_g.gif" alt="삼둥이" class="zem3_bt">
+    </div>
+    <!-- content4 -->
+    <footer>
+        <!-- 배경색 -->
+        <img src="./images/yongzem_d.png" alt="용젬이그림자" class="yongzem_d">
+        <img src="./images/yongzem.png" alt="용젬이" class="yongzem">
+        <!-- 용젬이 포지션 캐릭터 -->
+        <div class="footer_inner clearfix">
+            <!-- width:1320px, margin:auto -->
+            <div class="copyright">
+                <!-- float:left -->
+                <ul class="copy">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이메일무단수집거부</a></li>
+                    <li><a href="./sub4.html">젬젬스토어</a></li>
+                </ul>
+                <!-- copy -->
+                <p>
+                    젬젬갤러리 부산광역시 해운대구 APEC로 58<br>
+                    TEL : 010 - 1234 - 5678
+                    &nbsp&nbsp&nbsp
+                    E-mail : dea2019@naver.com<br>
+                    Copyright 2022. ZEMZEM GALLERY All rights reserved.
+                </p>
+            </div>
+            <!-- copy -->
+            <h1 class="f_logo">
+                <!-- float:right -->
+                <a href="./index.html"><img src="./images/f_logo.png" alt="하단로고"></a>
+            </h1>
+        </div>
+        <!-- footer_inner -->
+    </footer>
+</body>
+
+</html>
