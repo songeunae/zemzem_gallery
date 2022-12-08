@@ -89,7 +89,7 @@ body {
 
 .p_zemdol {
     position: absolute;
-    top: 490px;
+    top: 50%;
     right: 285px;
     z-index: 63;
     animation: rotation2 1s linear infinite alternate;
