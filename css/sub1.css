@@ -362,19 +362,20 @@ header {
 
 /* map */
 #map {
-    position: relative;
     background-color: #fff;
     padding: 50px 0 200px;
+    position: relative;
 }
 
 .map_inner {
     width: 1320px;
     margin: 50px auto;
+    position: relative;
 }
 
 .directions {
     position: absolute;
-    right: 200px;
+    right: 0;
     bottom: 100px;
 }
 
