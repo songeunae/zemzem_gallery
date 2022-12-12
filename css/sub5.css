@@ -39,16 +39,19 @@ body {
     /* #content1 -> position: relative; */
     position: absolute;
     top: -170px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
 }
 
 .bg_2 {
     position: absolute;
-    width: 100%;
     bottom: -75px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 }
+
 
 /* title */
 .title {
@@ -319,15 +322,11 @@ header {
     margin-top: 60px;
 }
 
-.s_end1 {
-    position: absolute;
-    top: -50px;
-    left: 550px;
-    z-index: 2;
-    animation: upanddown2 1s linear infinite alternate;
+.event1_box1 {
+    position: relative;
 }
 
-.s_end2 {
+.s_end {
     position: absolute;
     top: -50px;
     right: -50px;

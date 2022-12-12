@@ -39,16 +39,19 @@ body {
     /* #content1 -> position: relative; */
     position: absolute;
     top: -170px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
 }
 
 .bg_2 {
     position: absolute;
-    width: 100%;
     bottom: -75px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 }
+
 
 /* title */
 .title {
@@ -223,20 +226,17 @@ header {
     margin-top: 50px;
 }
 
-.s_end1 {
+.s_end {
     position: absolute;
-    top: 110px;
-    left: 790px;
+    top: -50px;
+    right: -50px;
     z-index: 2;
     animation: upanddown2 1s linear infinite alternate;
 }
 
-.s_end2 {
-    position: absolute;
-    top: 110px;
-    right: 450px;
-    z-index: 2;
-    animation: upanddown2 1s linear infinite alternate;
+.poster4,
+.poster5 {
+    position: relative;
 }
 
 /* etiquette */
