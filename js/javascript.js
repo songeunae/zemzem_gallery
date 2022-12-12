@@ -147,6 +147,10 @@ $(function () {
             el: ".swiper-pagination",
             dynamicBullets: true,
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         loop: true,
     });
 
@@ -154,6 +158,10 @@ $(function () {
     var swiper = new Swiper(".sub_banner", {
         pagination: {
             el: ".swiper-pagination",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
         loop: true,
     });
